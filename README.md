@@ -1,6 +1,6 @@
 # dbookmarks
 
-This is a very simple go program that extracts urls from a text file, pipes them into [dmenu-mac](https://github.com/oNaiPs/dmenu-mac) 
+This is a very simple go program that extracts urls (using [xurls](https://github.com/mvdan/xurls) from a text file, pipes them into [dmenu-mac](https://github.com/oNaiPs/dmenu-mac) 
 and opens them in browser upon selection. It would've been simpler to do as a bash script, but I'm teaching myself go (and programming 
 in general - so this is why).
 
