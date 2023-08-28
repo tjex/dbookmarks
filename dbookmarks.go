@@ -13,7 +13,7 @@ func main() {
 	// the first arg of Args is the command itself
 	file, err := os.Open(os.Args[1])
 	if err != nil {
-		fmt.Println("Error:", err)
+		fmt.Println("Error:", err.Error())
 	}
 	defer file.Close()
 
@@ -55,6 +55,7 @@ func main() {
 	open := exec.Command("open", url)
 	err = open.Run()
 	if err != nil {
-		fmt.Println(err)
+		println("Error:", err.Error())
 	}
+
 }
